@@ -1,0 +1,12 @@
+mqtt_client:
+  ros__parameters:
+    broker:
+      host: localhost
+      port: 1883
+    bridge:
+      ros2mqtt:
+        ros_topic: /trigno/data
+        mqtt_topic: trigno/datahandler
+      mqtt2ros:
+        mqtt_topic: trigno/datahandler
+        ros_topic: /trigno/data
