@@ -1,7 +1,7 @@
 # delsys_trigno
 ros2 data collection from Delsys Trigno sensors
 
-## Installation and setup
+## Step-1 Installation and setup
 Download the package
 ```
 git clone https://github.com/anwaybose/delsys_trigno.git
@@ -17,13 +17,13 @@ sudo apt clean
 pip3 install paho-mqtt
 ```
 
-## Initiate the broker
+## Step-1 Initiate the broker
 ```
 cd delsys_trigno
 mosquitto -v -c test.conf
 ```
 
-## Build and Launch the mqtt_client and the trigno data collection package
+## Step-1 Build and Launch the mqtt_client and the trigno data collection package
 In a new terminal
 ```
 cd delsys_trigno
@@ -32,7 +32,7 @@ source ./install/setup.bash
 
 ros2 launch trigno_multi trigno_mqtt.launch.py 
 ```
-## check for available topics
+## Step-1 check for available topics
 In a new terminal
 ```
 cd delsys_trigno
