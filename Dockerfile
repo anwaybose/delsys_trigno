@@ -131,13 +131,13 @@ RUN apt clean
 
 RUN pip3 install paho-mqtt
 
-# Download the delsys_trigno package
-RUN git clone https://github.com/anwaybose/delsys_trigno.git
-
 USER ${NB_USER}
 WORKDIR /home/${NB_USER}
 # --- Appy JupyterLab custom Settings --- #
 COPY --chown=${NB_USER}:users ./jupyter-settings.json /opt/conda/share/jupyter/lab/settings/overrides.json
+
+# Download the delsys_trigno package
+RUN git clone https://github.com/anwaybose/delsys_trigno.git
 
 # --- Entrypoint --- #
 COPY --chown=${NB_USER}:users entrypoint.sh /
