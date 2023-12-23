@@ -40,3 +40,20 @@ source ./install/setup.bash
 
 ros2 topic list
 ```
+## To use the docker comntainer
+* Run Docker image
+```
+cd delsys_trigno/docker_files
+
+docker compose up
+```
+
+* Open url [](http://localhost:8888/)
+
+* Force image rebuild after updating the Dockerfile
+
+In a new terminal
+```
+cd delsys_trigno/docker_files
+docker compose up -d --build 
+```
