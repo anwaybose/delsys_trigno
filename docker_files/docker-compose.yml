@@ -12,12 +12,12 @@ services:
       - 11311:11311
     privileged: true
     # user: root
-    user: cfl
-    working_dir: /home/cfl
+    user: jovyan
+    working_dir: /home/jovyan
     command: jupyter lab --allow-root --NotebookApp.token='' --no-browser --ip=0.0.0.0
-    entrypoint: ["/home/cfl/work/entrypoint.sh"]
+    entrypoint: ["/home/jovyan/work/entrypoint.sh"]
     volumes:
-      - ./:/home/cfl/work
+      - ./:/home/jovyan/work
     #   - /tmp/.X11-unix:/tmp/.X11-unix:rw
     # environment:
     #   - DISPLAY
