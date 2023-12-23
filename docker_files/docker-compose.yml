@@ -15,7 +15,7 @@ services:
     user: cfl
     working_dir: /home/cfl
     command: jupyter lab --allow-root --NotebookApp.token='' --no-browser --ip=0.0.0.0
-    entrypoint: ["/home/jovyan/work/entrypoint.sh"]
+    entrypoint: ["/home/cfl/work/entrypoint.sh"]
     volumes:
       - ./:/home/jovyan/work
     #   - /tmp/.X11-unix:/tmp/.X11-unix:rw
