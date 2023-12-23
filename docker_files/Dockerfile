@@ -138,6 +138,8 @@ COPY --chown=${NB_USER}:users ./jupyter-settings.json /opt/conda/share/jupyter/l
 
 # Download the delsys_trigno package
 RUN git clone https://github.com/anwaybose/delsys_trigno.git
+# WORKDIR /home/${NB_USER}/delsys_trigno
+# RUN mosquitto -v -c test.conf
 
 # --- Entrypoint --- #
 COPY --chown=${NB_USER}:users entrypoint.sh /
