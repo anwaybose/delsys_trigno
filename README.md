@@ -40,7 +40,7 @@ source ./install/setup.bash
 
 ros2 topic list
 ```
-## To use the docker comntainer
+## To use as a Docker container
 * Run Docker image
 ```
 cd delsys_trigno/docker_files
@@ -57,3 +57,4 @@ In a new terminal
 cd delsys_trigno/docker_files
 docker compose up -d --build 
 ```
+Then follow Steps 2-4
