@@ -140,7 +140,7 @@ COPY --chown=${NB_USER}:users ./jupyter-settings.json /opt/conda/share/jupyter/l
 
 # Download the delsys_trigno package
 <<<<<<< Updated upstream
-RUN git clone https://github.com/anwaybose/delsys_trigno.git
+# RUN git clone https://github.com/anwaybose/delsys_trigno.git
 =======
 # RUN git clone https://github.com/anwaybose/delsys_trigno.git
 >>>>>>> Stashed changes
