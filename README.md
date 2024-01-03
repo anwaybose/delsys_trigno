@@ -41,9 +41,31 @@ source ./install/setup.bash
 ros2 topic list
 ```
 ## To use as a Docker container
+
+### Option 1
+
 * Run Docker image
 ```
 cd delsys_trigno/docker_files
+
+docker compose up
+```
+
+* Open url [](http://localhost:8888/)
+
+* Force image rebuild after updating the Dockerfile
+
+In a new terminal
+```
+cd delsys_trigno/docker_files
+docker compose up -d --build 
+```
+Then follow Steps 2-4
+
+### Option 2
+* Run Docker image
+```
+cd delsys_trigno/mqtt_docker
 
 docker compose up
 ```
