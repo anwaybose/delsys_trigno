@@ -139,7 +139,11 @@ WORKDIR /home/${NB_USER}
 COPY --chown=${NB_USER}:users ./jupyter-settings.json /opt/conda/share/jupyter/lab/settings/overrides.json
 
 # Download the delsys_trigno package
+<<<<<<< Updated upstream
 RUN git clone https://github.com/anwaybose/delsys_trigno.git
+=======
+# RUN git clone https://github.com/anwaybose/delsys_trigno.git
+>>>>>>> Stashed changes
 # WORKDIR /home/${NB_USER}/delsys_trigno
 # RUN mosquitto -v -c test.conf
 

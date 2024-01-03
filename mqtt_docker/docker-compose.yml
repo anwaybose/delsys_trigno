@@ -15,9 +15,15 @@ services:
     user: jovyan
     working_dir: /home/jovyan
     command: jupyter lab --allow-root --NotebookApp.token='' --no-browser --ip=0.0.0.0
+<<<<<<< Updated upstream
     entrypoint: ["/home/jovyan/work/mqtt_docker/entrypoint.sh"]
     volumes:
       - ./../:/home/jovyan/work
+=======
+    entrypoint: ["/home/jovyan/work/entrypoint.sh"]
+    volumes:
+      - ./:/home/jovyan/work
+>>>>>>> Stashed changes
     #   - /tmp/.X11-unix:/tmp/.X11-unix:rw
     # environment:
     #   - DISPLAY
